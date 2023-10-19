@@ -1,0 +1,10 @@
+import random
+import string
+
+def generate_random_text(length):
+    letters = string.ascii_lowercase
+    return ''.join(random.choice(letters) for i in range(length))
+
+random_text = generate_random_text(10)
+print(random_text)
+
